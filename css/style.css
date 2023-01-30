@@ -9,6 +9,10 @@
     overflow: inherit;
 
 }
+#imagepos{
+    align-items: center;
+    text-align: center;
+}
 
 
 li {
@@ -18,7 +22,6 @@ li {
 
 .col {
     margin-left: 5%;
-    width: 100vw;
 }
 
 .container-fluid {
@@ -211,6 +214,16 @@ li {
 #content {
     background-color: #fafafa;
     margin: 0px;
+}
+
+@media (max-width: 992px) {
+    .errored {
+        width: 50%
+    }
+
+    .container1 {
+        width: 50%
+    };
 }
 
 /*-------------------------------------------------------------------------------InnerPage-1----------------------------------------------------------------------------*/
@@ -526,7 +539,7 @@ th {
     color: #00AF27;
 }
 
-#callactionbutton {
+#callbutton {
     margin-top: 30px;
     border-radius: 25px;
 }
