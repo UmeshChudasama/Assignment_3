@@ -12,7 +12,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link href="/js/custom.js" rel="javascript" type="script" >
+    <link href="/js/custom.js" rel="javascript" type="script">
     <link href="/js/bootstrap.bundle.min.js" rel="javascript">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
@@ -20,34 +20,27 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-        <div class="row" id="row1">
-            <div class="col-xl-2 col-lg-3 col-md-4 col-sm-4 " id="menu">
-                <img src="images/menu-bar.svg" alt="Error"> &nbsp &nbsp;
-                <img src="images/header-logo.svg" alt=" Error">
-            </div>
-            <div class="col-xl-7 col-lg-6 col-md-4 col-sm-4 ">
-                <div id="search"><img id="abcd" src="images/search-icon.svg" alt="
-              Error">
-                </div>
-                <div class="searchtxt">Search</div>
-
-            </div>
-            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-4 ">
-                <div class="d-flex flex-row justify-content-end">
-                    <div id="notification">
-                        <img src="images/notification-icon.svg" alt="Error">
-                    </div> &nbsp; &nbsp; &nbsp;&nbsp;
-                    <div id="profile">
-                        <img src="images/profile.png" alt="error">
-                    </div>
-                    <div id="uname"> <strong>John Doe</strong>
-                        <img src="images/downward-arrow.svg" alt="downward-arrow">
-                    </div>
-                </div>
+    <nav class="navbar navbar-expand-lg mb-4 navbar-light
+    bg-light">
+        <div class="container-fluid navcontainer p-0 justify-content-start">
+            <button class="btn me-2" onclick="widthChange()" data-bs-toggle="collapse" data-bs-target="#dashboard"><img
+                    src="images/menu-bar.svg"></button>
+            <a href="#" class="navbar-brand me-5"><img src="images/header-logo.svg">
+            </a>
+            <div class="d-flex justify-content-around">
+                <img class="mt-1 me-2" src="images/search-icon.svg" style="height: 19px;" alt="search">
+                <input class="form-control me-2 p-0 border-0" type="search" placeholder="Search" aria-label="Search">
             </div>
         </div>
-    </div>
+        <div class="container-fluid gayab p-0 justify-content-end">
+            <img class="me-5" src="images/notification-icon.svg" alt="notification">
+            <img class="me-3" src="images/profile.png" alt="dp">
+            <div class="me-3">
+                John doe
+                <img src="images/downward-arrow.svg" alt="dropdown">
+            </div>
+        </div>
+    </nav>
     <div class="container-fluid">
         <div class="row">
             <div class="col-2" id="dashboard">
@@ -55,7 +48,7 @@
                     <div style="float: left; margin-left: 5px;">
                         <img id="dashpic" src="images/dashboard-default.svg" alt="">
                     </div>
-                    <div class="dashboardtext">
+                    <div class="dashboardtext" id="minisize">
                         Dashboard
                     </div>
                 </div>
@@ -67,15 +60,15 @@
               letter-spacing: 0px;
               color: #C8242F;
               text-align: left; margin-top: 4px; margin-left:
-              35px ;">
+              35px ;" id="minisize">
                         Analysis
                     </div>
                 </div>
                 <div class="container2">
-                    <div style="float: left; margin-left: 5px;">
+                    <div style="float: left;margin-left: 5px;">
                         <img id="dashpic" src="images/inbox-default.svg" alt="">
                     </div>
-                    <div class="dashboardtext">
+                    <div class="dashboardtext" id="minisize">
                         Inbox
                     </div>
                 </div>
@@ -83,7 +76,7 @@
                     <div style="float: left; margin-left: 5px;">
                         <img id="dashpic" src="images/clock-default.svg" alt="">
                     </div>
-                    <div class="dashboardtext">
+                    <div class="dashboardtext" id="minisize">
                         History
                     </div>
                 </div>
@@ -91,7 +84,7 @@
                     <div style="float: left; margin-left: 5px;">
                         <img id="dashpic" src="images/user-default.svg" alt="">
                     </div>
-                    <div class="dashboardtext">
+                    <div class="dashboardtext" id="minisize">
                         Users
                     </div>
                 </div>
@@ -99,7 +92,7 @@
                     <div style="float: left; margin-left: 5px;">
                         <img id="dashpic" src="images/maintenance-default.svg" alt="">
                     </div>
-                    <div class="dashboardtext">
+                    <div class="dashboardtext" id="minisize">
                         Maintenance
                     </div>
                 </div>
@@ -107,7 +100,7 @@
                     <div style="float: left; margin-left: 5px;">
                         <img id="dashpic" src="images/setting-default.svg" alt="">
                     </div>
-                    <div class="dashboardtext">
+                    <div class="dashboardtext" id="minisize">
                         Setting
                     </div>
                 </div>
@@ -265,8 +258,8 @@
 
                     <button class="btn border border-danger text-danger " id="uploadbutton" type="button"
                         onclick="document.getElementById('upload').click()">
-                        <span class="glyphicon " aria-hidden="true"></span> <img
-                            src="images/cloud-upload-icon.svg" alt=""> Upload
+                        <span class="glyphicon " aria-hidden="true"></span> <img src="images/cloud-upload-icon.svg"
+                            alt=""> Upload
                     </button>
                     <input type="file" id="upload" style="display:none" placeholder="Select file" />
                     <span id="filename" style="padding-left: 3% ;" class="pull-right"></span>
@@ -307,7 +300,8 @@
 
 
 
-                    <div class=" col-xl-5 col-lg-5 col-12 " style="    margin: 20px 20px 20px 20px; align-items: center;">
+                    <div class=" col-xl-5 col-lg-5 col-12 "
+                        style="    margin: 20px 20px 20px 20px; align-items: center;">
                         <div class="row" style="height: 2em;" id="snackred">
                             <div class="col-1">
                                 <img src="/images/error-icon.svg" alt="" id="snackbaricon">
@@ -351,7 +345,7 @@
 
                         </div>
                     </div>
-                <!-- <div class="col- alert alert-danger" role="alert">
+                    <!-- <div class="col- alert alert-danger" role="alert">
                     This is error Message
                 </div>
                 <div class="col-6 alert alert-info" role="alert">
@@ -373,14 +367,14 @@
 
 
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6">
-                        <button class="btn px-4 text-white bg-danger border border-danger" data-toggle="tooltip" title="this is primary button" id="callbutton"
-                            type="button" >
+                        <button class="btn px-4 text-white bg-danger border border-danger" data-toggle="tooltip"
+                            title="this is primary button" id="callbutton" type="button">
                             <b>Primary</b>
                         </button>
                     </div>
                     <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6" style="margin-left: -30px;padding-left: 50px;">
-                        <button class="btn px-4 text-danger bg-white border border-danger"  data-toggle="tooltip" title="This is secondary button" id="callbutton"
-                            type="button">
+                        <button class="btn px-4 text-danger bg-white border border-danger" data-toggle="tooltip"
+                            title="This is secondary button" id="callbutton" type="button">
                             <b>Secondary</b>
                         </button>
                     </div>
@@ -395,7 +389,7 @@
                     style="background-color: white;margin-left: 20px;padding-right: 20px;padding-top: 30px; border-bottom: 2px solid #adadad;">
 
                     <div class="container">
-                        <ul class="nav nav-tabs" >
+                        <ul class="nav nav-tabs">
                             <li class="active"><a data-toggle="tab" href="#tab1" id="activetab">Tab 1</a></li>
                             <li><a data-toggle="tab" href="#tab2" id="deactivetab">Tab 2</a></li>
                             <li><a data-toggle="tab " href="#tab3" id="deactivetab">Tab 3</a></li>
@@ -403,7 +397,8 @@
 
                         <div class="tab-content">
                             <div id="tab1" class="tab-pane fade in active">
-                                <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem
                                     Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                                     unknown printer took a galley of type and scrambled it to make a type specimen book.
                                     It has survived not only five centuries, but also the leap into electronic
@@ -411,7 +406,8 @@
                                     the release of Letraset sheets containing</p>
                             </div>
                             <div id="tab2" class="tab-pane fade disabled">
-                                <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem
                                     Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                                     unknown printer took a galley of type and scrambled it to make a type specimen book.
                                     It has survived not only five centuries, but also the leap into electronic
@@ -419,7 +415,8 @@
                                     the release of Letraset sheets containing</p>
                             </div>
                             <div id="tab3" class="tab-pane fade disabled">
-                                <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                <p style="text-align: justify;">Lorem Ipsum is simply dummy text of the printing and
+                                    typesetting industry. Lorem
                                     Ipsum has been the industry's standard dummy text ever since the 1500s, when an
                                     unknown printer took a galley of type and scrambled it to make a type specimen book.
                                     It has survived not only five centuries, but also the leap into electronic

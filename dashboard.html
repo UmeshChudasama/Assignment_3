@@ -13,32 +13,30 @@
 
 <body>
     <div class="container-fluid">
-        <div class="row" id="row1">
-            <div class="col-2" id="menu">
-                <img src="images/menu-bar.svg" alt="menu icon"> &nbsp &nbsp
-                <img src="images/header-logo.svg" alt=" logo">
-            </div>
-            <div class="col-7">
-                <div id="search"><img id="abcd" src="images/search-icon.svg" alt="
-              search-icon">
-                </div>
-                <div class="searchtxt">Search</div>
 
-            </div>
-            <div class="col-3">
-                <div class="d-flex flex-row justify-content-end">
-                    <div id="notification">
-                        <img src="images/notification-icon.svg" alt="notification-icon">
-                    </div> &nbsp; &nbsp; &nbsp;&nbsp;
-                    <div id="profile">
-                        <img src="images/profile.png">
-                    </div>
-                    <div id="uname"> <strong>John Doe</strong>
-                        <img src="images/downward-arrow.svg" alt="downward-arrow">
-                    </div>
+        <nav class="navbar navbar-expand-lg mb-4 navbar-light
+            bg-light">
+            <div class="container-fluid navcontainer p-0 justify-content-start">
+                <button class="btn me-2" onclick="widthChange()" data-bs-toggle="collapse"
+                    data-bs-target="#dashboard"><img src="images/menu-bar.svg"></button>
+                <a href="#" class="navbar-brand me-5"><img src="images/header-logo.svg">
+                </a>
+                <div class="d-flex justify-content-around">
+                    <img class="mt-1 me-2" src="images/search-icon.svg" style="height: 19px;" alt="search">
+                    <input class="form-control me-2 p-0 border-0" type="search" placeholder="Search"
+                        aria-label="Search">
                 </div>
             </div>
-        </div>
+            <div class="container-fluid gayab p-0 justify-content-end">
+                <img class="me-5" src="images/notification-icon.svg" alt="notification">
+                <img class="me-3" src="images/profile.png" alt="dp">
+                <div class="me-3">
+                    John doe
+                    <img src="images/downward-arrow.svg" alt="dropdown">
+                </div>
+            </div>
+        </nav>
+
     </div>
     <div class="container-fluid">
         <div class="row">
@@ -50,7 +48,7 @@
                     <div style="font: normal normal 600 16px/21px Roboto;
               letter-spacing: 0px;
               color: #C8242F; text-align: left; margin-top: 4px; margin-left:
-              35px ;">
+              35px ;"  id="minisize">
                         Dashboard
                     </div>
                 </div>
@@ -58,10 +56,7 @@
                     <div style="float: left; margin-left: 5px;">
                         <img id="dashpic" src="images/graph-default.svg" alt="">
                     </div>
-                    <div style="font: normal normal 600 16px/21px Roboto;
-              letter-spacing: 0px;
-              text-align: left; margin-top: 4px; margin-left:
-              35px ;">
+                    <div class="dashboardtext"  id="minisize">
                         Analysis
                     </div>
                 </div>
@@ -69,10 +64,7 @@
                     <div style="float: left; margin-left: 5px;">
                         <img id="dashpic" src="images/inbox-default.svg" alt="">
                     </div>
-                    <div style="font: normal normal 600 16px/21px Roboto;
-              letter-spacing: 0px;
-              text-align: left; margin-top: 4px; margin-left:
-              35px ;">
+                    <div class="dashboardtext"  id="minisize">
                         Inbox
                     </div>
                 </div>
@@ -80,10 +72,7 @@
                     <div style="float: left; margin-left: 5px;">
                         <img id="dashpic" src="images/clock-default.svg" alt="">
                     </div>
-                    <div style="font: normal normal 600 16px/21px Roboto;
-              letter-spacing: 0px;
-              text-align: left; margin-top: 4px; margin-left:
-              35px ;">
+                    <div class="dashboardtext"  id="minisize">
                         History
                     </div>
                 </div>
@@ -91,10 +80,7 @@
                     <div style="float: left; margin-left: 5px;">
                         <img id="dashpic" src="images/user-default.svg" alt="">
                     </div>
-                    <div style="font: normal normal 600 16px/21px Roboto;
-              letter-spacing: 0px;
-              text-align: left; margin-top: 4px; margin-left:
-              35px ;">
+                    <div class="dashboardtext"  id="minisize">
                         Users
                     </div>
                 </div>
@@ -102,10 +88,7 @@
                     <div style="float: left; margin-left: 5px;">
                         <img id="dashpic" src="images/maintenance-default.svg" alt="">
                     </div>
-                    <div style="font: normal normal 600 16px/21px Roboto;
-              letter-spacing: 0px;
-              text-align: left; margin-top: 4px; margin-left:
-              35px ;">
+                    <div class="dashboardtext"  id="minisize">
                         Maintenance
                     </div>
                 </div>
@@ -113,10 +96,7 @@
                     <div style="float: left; margin-left: 5px;">
                         <img id="dashpic" src="images/setting-default.svg" alt="">
                     </div>
-                    <div style="font: normal normal 600 16px/21px Roboto;
-              letter-spacing: 0px;
-              text-align: left; margin-top: 4px; margin-left:
-              35px ;">
+                    <div class="dashboardtext"  id="minisize">
                         Setting
                     </div>
                 </div>
@@ -316,7 +296,7 @@
                                     <td>Public Adjustment Firm</td>
                                     <td>georgia.young@example.com</td>
                                     <td>24 May, 2020</td>
-                                    <td >
+                                    <td>
                                         <div id="paid">Paid</div>
                                     </td>
                                     <td>$47,800</td>
@@ -327,7 +307,7 @@
                                     <td>Other</td>
                                     <td>jessica.hanson@example.com</td>
                                     <td>24 May, 2020</td>
-                                    <td >
+                                    <td>
                                         <div id="paid">Paid</div>
                                     </td>
                                     <td>$98,000</td>
@@ -337,7 +317,7 @@
                                     <td>Vendor</td>
                                     <td>alma.lawson@example.com</td>
                                     <td>8 Sep, 2020</td>
-                                    <td >
+                                    <td>
                                         <div id="paid">Paid</div>
                                     </td>
                                     <td>$20,900</td>
@@ -348,7 +328,7 @@
                                     <td>Property Management Company</td>
                                     <td>kenzi.lawson@example.com</td>
                                     <td>22 Oct, 2020</td>
-                                    <td >
+                                    <td>
                                         <div id="paid">Paid</div>
                                     </td>
                                     <td>$10,570</td>
@@ -358,7 +338,7 @@
                                     <td>Subcontractor Company</td>
                                     <td>jackson.graham@example.com</td>
                                     <td>1 Feb, 2020</td>
-                                      <td >
+                                    <td>
                                         <div id="failed">failed</div>
                                     </td>
                                     <td>$10,200</td>
@@ -368,8 +348,8 @@
                                     <td>Mortgage Company</td>
                                     <td>felicia.reid@example.com</td>
                                     <td>22 Oct, 2020</td>
-                                    
-                                    <td >
+
+                                    <td>
                                         <div id="pending">pending</div>
                                     </td>
                                     <td>$12,600</td>
@@ -379,7 +359,7 @@
                                     <td>TPA</td>
                                     <td>dolores.chambers@example.com</td>
                                     <td>21 Sep, 2020</td>
-                                    <td >
+                                    <td>
                                         <div id="paid">Paid</div>
                                     </td>
                                     <td>$11,170</td>
@@ -389,8 +369,8 @@
                                     <td>Fire Department</td>
                                     <td>nevaeh.simmons@example.com</td>
                                     <td>17, OCt 2020</td>
-                                    
-                                    <td >
+
+                                    <td>
                                         <div id="failed">failed</div>
                                     </td>
                                     <td>$28,000</td>
@@ -400,7 +380,7 @@
                                     <td>Insurance Carrier</td>
                                     <td>curties.weaver@example.com</td>
                                     <td>21 Sep, 2020</td>
-                                    <td >
+                                    <td>
                                         <div id="paid">Paid</div>
                                     </td>
                                     <td>$10,000</td>

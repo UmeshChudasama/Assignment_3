@@ -192,6 +192,7 @@ li {
 #abcd {
     width: 20px;
     height: 20px;
+    object-fit: contain;
 }
 
 #notification {
@@ -216,14 +217,10 @@ li {
     margin: 0px;
 }
 
-@media (max-width: 992px) {
-    .errored {
-        width: 50%
+@media screen and (max-width:992){
+    .gayab{
+        width: 50%;
     }
-
-    .container1 {
-        width: 50%
-    };
 }
 
 /*-------------------------------------------------------------------------------InnerPage-1----------------------------------------------------------------------------*/
@@ -553,3 +550,43 @@ th {
     font-weight: 500;
     color: #adadad;
 }
+/*-----------------------------------------------------------------------dahsboard media queries------------------------------------------------------------------------*/
+
+@media screen and (max-width: 1010px) {
+    #minisize {
+      display: none;
+    }
+ }
+ @media screen and (max-width:444px) {
+    .container2{
+        margin-left: 0px;
+    }
+    .container1{
+        margin-left: 0px;
+        background-color: white;
+    }
+ }
+/* 
+ @media screen and (max-width:740px) {
+    #vanish{
+        display: none;
+    }
+    #notification{
+        display: none;
+    }
+
+ }
+ @media screen and( max-width:503px) {
+    #menu{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #search{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #profile{
+        padding-right: 0px;
+        padding-left: 0px;
+    }
+ } */
