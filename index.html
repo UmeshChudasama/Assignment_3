@@ -1,61 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta content="text/html; charset=utf-8">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="css/style.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-</head>
+    <head>
+        <script>
+        function VALIDATION() {
+            var name = document.forms.RegForm.Username.value;
+            var password = document.forms.RegForm.Password.value;
 
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col" id="imagepos">
-                <img src="/images/hero-image.png" alt="image" class="heroImage" />
-            </div>
-            <div class="col">
-                <ul>
-                    <li class="companyLogo">
-                        <img src="images/logo.svg" alt="company logo">
-                    </li>
-                    <li class="discription">
-                        <strong> We are <ins style="color: #C8242F;
-                                    text-decoration:
-                                    none;;">experts</ins> in
-                            business, marketing, growth, & sales.
-                        </strong>
-                    </li>
-                    <li class="loginTxt">
-                        Login into your account
-                    </li>
-                    <li>
-                        <input type="text" class="username" style="text-indent: 20px;" placeholder="Username">
-                    </li>
-                    <li>
-                        <input type="password" class="password" style="text-indent: 20px;" placeholder="Password">
-                    </li>
-                    <li>
-                        <input type="submit" value="Login" class="loginButton">
-                        <input type="submit" value="Forgot password?" class="forgotPass">
-                    </li>
-                    <li>
-                        <div class="lastTxt">Are you a new Member?
-                        </div>
-                        <input type="submit" style="
+            var regName = /\D+$/g;
+
+
+            if(name="" || regName.test(Username)){
+                window.alert("Please enter your name Properly");
+                name.focus();
+                return false;
+            }
+
+            if(Password=""){
+                alert("Please enter password ");
+                password.focus();
+                return false;
+            }
+            if(Password.length < 6)
+            {
+                alert("Passworld should be contain atleast 6 character");
+                password.focus();
+                return false;
+            }
+            return true;
+        }
+    </script>
+        <meta content="text/html; charset=utf-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto"
+            rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col" id="imagepos">
+                    <img src="/images/hero-image.png" alt="image"
+                        class="heroImage" />
+                </div>
+                <div class="col">
+                    <form name="RegForm" onsubmit="return VALIDATION()"
+                    method="post">
+                        <ul>
+                            <li class="companyLogo">
+                                <img src="images/logo.svg" alt="company logo">
+                            </li>
+                            <li class="discription">
+                                <strong> We are <ins style="color: #C8242F;
+                                        text-decoration:
+                                        none;;">experts</ins> in
+                                    business, marketing, growth, & sales.
+                                </strong>
+                            </li>
+                            <li class="loginTxt">
+                                Login into your account
+                            </li>
+                            
+                            <li>
+                                <input type="text" class="username"
+                                    style="text-indent: 20px;"
+                                    placeholder="Username" name="Username">
+                            </li>
+                            <li>
+                                <input type="password" class="password"
+                                    style="text-indent: 20px;"
+                                    placeholder="Password" name="Password">
+                            </li>
+                            <li>
+                                <input type="submit" value="Submit"
+                                    class="loginButton" name="Submit" >
+                                <input type="button" value="Forgot password?"
+                                    class="forgotPass">
+                            </li>
+                            <li>
+                                <div class="lastTxt">Are you a new Member?
+                                </div>
+                                <input type="button" style="
                                     color: red; border: none; background-color:
                                     #fafafa;" value="Register here">
 
-                    </li>
+                            </li>
+                     
 
-                </ul>
+                        </ul>
+                    </form>
+                </div>
+
             </div>
-
         </div>
-    </div>
-</body>
+    </body>
 
 </html>

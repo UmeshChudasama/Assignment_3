@@ -30,3 +30,7 @@
 //         filename = e.targe
 //     }
 // })
+
+function myFunction() {
+    location.replace("/innerpage.html")
+  }
