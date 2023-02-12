@@ -1,428 +1,410 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <script>
-            function myFunction() {
-                location.replace("/innerpage.html")
-            }
-        </script>
-        <meta type="text/html;" charset="utf-8" content="width=device-width
+<head>
+    <script>
+        function myFunction() {
+            location.replace("/innerpage.html")
+        }
+    </script>
+    <meta type="text/html;" charset="utf-8" content="width=device-width
             shrink-to-fit=no">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto"
-            rel="stylesheet">
-        <link href="css/style.css" rel="stylesheet">
-        <link href="css/bootstrap.min.css" rel="stylesheet">
-        <link href="/js/custom.js">
-    </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="/js/custom.js">
+</head>
 
-    <body>
-        <div class="container-fluid">
+<body>
+    <div class="container-fluid">
 
-            <nav class="navbar navbar-expand-lg mb-4 navbar-light
+        <nav class="navbar navbar-expand-lg mb-4 navbar-light
                 bg-light">
-                <div class="container-fluid navcontainer p-0
+            <div class="container-fluid navcontainer p-0
                     justify-content-start">
-                    <button class="btn me-2" onclick="widthChange()"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#dashboard"><img
-                            src="images/menu-bar.svg"></button>
-                    <a href="#" class="navbar-brand me-5"><img
-                            src="images/header-logo.svg">
-                    </a>
-                    <div class="d-flex justify-content-around">
-                        <img class="mt-1 me-2" src="images/search-icon.svg"
-                            style="height: 19px;" alt="search">
-                        <input class="form-control me-2 p-0 border-0"
-                            type="search" placeholder="Search"
-                            aria-label="Search">
-                    </div>
+                <button class="btn me-2 bg-light" onclick="widthChange()" data-bs-toggle="collapse"
+                    data-bs-target="#dashboard"><img src="images/menu-bar.svg"></button>
+                <a href="#" class="navbar-brand me-5"><img src="images/header-logo.svg">
+                </a>
+                <div class="d-flex justify-content-around">
+                    <img class="mt-1 me-2" src="images/search-icon.svg" style="height: 19px;" alt="search">
+                    <input class="form-control me-2 p-0 border-0" type="search" placeholder="Search"
+                        aria-label="Search">
                 </div>
-                <div class="container-fluid gayab p-0 justify-content-end">
-                    <img class="me-5" src="images/notification-icon.svg"
-                        alt="notification">
-                    <img class="me-3" src="images/profile.png" alt="dp">
-                    <div class="me-3">
-                        John doe
-                        <img src="images/downward-arrow.svg" alt="dropdown">
-                    </div>
+            </div>
+            <div class="container-fluid gayab p-0 justify-content-end">
+                <img class="me-5" src="images/notification-icon.svg" alt="notification">
+                <img class="me-3" src="images/profile.png" alt="dp">
+                <div class="me-3">
+                    John doe
+                    <img src="images/downward-arrow.svg" alt="dropdown">
                 </div>
-            </nav>
+            </div>
+        </nav>
 
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-2" id="dashboard">
-                    <div class="container1">
-                        <div style="float: left; margin-left: 5px;">
-                            <img id="dashpic" src="images/dashboard-active.svg"
-                                alt="">
-                        </div>
-                        <div style="font: normal normal 600 16px/21px Roboto;
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-2" id="dashboard">
+                <div class="container1">
+                    <div style="float: left; margin-left: 5px;">
+                        <img id="dashpic" src="images/dashboard-active.svg" alt="">
+                    </div>
+                    <div style="font: normal normal 600 16px/21px Roboto;
                             letter-spacing: 0px;
                             color: #C8242F; text-align: left; margin-top: 4px;
                             margin-left:
-                            35px ;" id="minisize" >
-                            Dashboard
-                        </div>
-                    </div>
-                    <div class="container2" onclick="myFunction()" >
-                        <div  style="float: left; margin-left: 5px;">
-                            <img id="dashpic" src="images/graph-default.svg"
-                                alt="">
-                        </div>
-                        <div class="dashboardtext" id="minisize">
-                            Analysis
-                        </div>
-                    </div>
-                    <div class="container2">
-                        <div style="float: left; margin-left: 5px;">
-                            <img id="dashpic" src="images/inbox-default.svg"
-                                alt="">
-                        </div>
-                        <div class="dashboardtext" id="minisize">
-                            Inbox
-                        </div>
-                    </div>
-                    <div class="container2">
-                        <div style="float: left; margin-left: 5px;">
-                            <img id="dashpic" src="images/clock-default.svg"
-                                alt="">
-                        </div>
-                        <div class="dashboardtext" id="minisize">
-                            History
-                        </div>
-                    </div>
-                    <div class="container2">
-                        <div style="float: left; margin-left: 5px;">
-                            <img id="dashpic" src="images/user-default.svg"
-                                alt="">
-                        </div>
-                        <div class="dashboardtext" id="minisize">
-                            Users
-                        </div>
-                    </div>
-                    <div class="container2">
-                        <div style="float: left; margin-left: 5px;">
-                            <img id="dashpic"
-                                src="images/maintenance-default.svg" alt="">
-                        </div>
-                        <div class="dashboardtext" id="minisize">
-                            Maintenance
-                        </div>
-                    </div>
-                    <div class="container2">
-                        <div style="float: left; margin-left: 5px;">
-                            <img id="dashpic" src="images/setting-default.svg"
-                                alt="">
-                        </div>
-                        <div class="dashboardtext" id="minisize">
-                            Setting
-                        </div>
-                    </div>
-                </div>
-                <div class="col-10" id="content">
-                    <div class="row" id="namein">
+                            35px ;" id="minisize">
                         Dashboard
                     </div>
-                    <div class="row" style="justify-content:
-                        center;margin-bottom: 30px;">
-
-                        <div class="col" id="productdetail">
-                            <div class="row">
-                                <div class="col-5" id="detailmap">
-                                    <img src="/images/star.svg" alt="error">
-                                </div>
-                                <div class="col-7" id="padtext">
-                                    <div class="row" id="numdetail">
-                                        23,456
-                                    </div>
-                                    <div class="row">
-                                        New Products
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col" id="productdetail">
-                            <div class="row">
-                                <div class="col-5" id="detailmap">
-                                    <img src="/images/new-product.svg"
-                                        alt="error">
-                                </div>
-                                <div class="col-7" id="padtext">
-                                    <div class="row" id="numdetail">
-                                        2345
-                                    </div>
-                                    <div class="row">
-                                        Added Products
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col" id="productdetail">
-                            <div class="row">
-                                <div class="col-5" id="detailmap">
-                                    <img src="/images/total-product.svg"
-                                        alt="error">
-                                </div>
-                                <div class="col-7" id="padtext">
-                                    <div class="row" id="numdetail">
-                                        32,456
-                                    </div>
-                                    <div class="row">
-                                        Total Products
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col" id="productdetail">
-                            <div class="row">
-                                <div class="col-5" id="detailmap">
-                                    <img src="/images/dollar-filled.svg"
-                                        alt="error">
-                                </div>
-                                <div class="col-7" id="padtext">
-                                    <div class="row" id="numdetail">
-                                        5678
-                                    </div>
-                                    <div class="row">
-                                        Today's Sale
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
-                        <div class="col" id="productdetail">
-                            <div class="row">
-                                <div class="col-5" id="detailmap">
-                                    <img src="/images/money-bag.svg"
-                                        alt="error">
-                                </div>
-                                <div class="col-7" id="padtext">
-                                    <div class="row" id="numdetail">
-                                        33,5342
-                                    </div>
-                                    <div class="row">
-                                        Total Sale
-                                    </div>
-                                </div>
-
-                            </div>
-                        </div>
+                </div>
+                <div class="container2" onclick="myFunction()">
+                    <div style="float: left; margin-left: 5px;">
+                        <img id="dashpic" src="images/graph-default.svg" alt="">
                     </div>
-                    <div class="row" style="background-color:
-                        white;margin-bottom: 30px;">
-
-                        <div class="d-flex flex-column" id="column1">
-                            <div class="row" id="image1">
-                                <div class="col-2" id="imagetext">
-                                    Sale
-                                </div>
-                                <div class="col-7">
-
-
-                                </div>
-                                <div class="col-1" id="imagetextline">
-                                    Weekly
-                                </div>
-                                <div class="col-1" id="imagetextline">
-                                    Monthly
-                                </div>
-                                <div class="col-1" id="imagetextline2">
-                                    <u>Yearly</u>
-                                </div>
-
-                            </div>
-                            <div class="row" id="image1">
-                                <img src="/images/data-graph.png" alt="Error">
-                            </div>
-                        </div>
-                        <div class="d-flex flex-column" id="column2">
-                            <div class="row" id="imagetext">
-                                Sales by Country
-                            </div>
-                            <div class="row">
-                                <img src="/images/pie-chart.svg">
-                            </div>
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="row" id="alignment">
-                                        <div class="col-1">
-                                            <div class="dotred">
-
-                                            </div>
-                                        </div>
-                                        <div class="col-11">
-                                            United State of America
-                                        </div>
-                                    </div>
-                                    <div class="row">
-
-                                        <div class="col-1">
-                                            <div class="dotorange">
-
-                                            </div>
-                                        </div>
-                                        <div class="col-11">
-                                            Canada
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="row">
-                                        <div class="col-2">
-                                            <div class="dotyellow">
-
-                                            </div>
-                                        </div>
-                                        <div class="col-10">
-                                            Russia
-                                        </div>
-                                    </div>
-                                    <div class="row" style="margin-top: 38px;">
-                                        <div class="col-2">
-                                            <div class="dotgreen">
-
-                                            </div>
-                                        </div>
-                                        <div class="col-10">
-                                            India
-                                        </div>
-
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    <div class="dashboardtext" id="minisize">
+                        Analysis
                     </div>
-                    <div class="row" style="height: 100%;width: 100%;">
-                        <div class="col">
-                            <div class="row">
-                                <div class="col-11" id="col3text1">
-                                    Invoices
-                                </div>
-                                <div class="col-1" id="col3text2">
-                                    View All
-                                </div>
-                            </div>
-                            <div class="row">
-                                <table style="width: 100%;margin-left: 20px;
-                                    margin-top: 35px;">
-                                    <tr>
-                                        <th>INVOICE</th>
-                                        <th>COMPANY NAME</th>
-                                        <th>EMAIL</th>
-                                        <th> DUE DATE</th>
-                                        <th>STATUS</th>
-                                        <th>AMOUNT</th>
-                                    </tr>
-                                    <tr>
-                                        <td>651535</td>
-                                        <td>Public Adjustment Firm</td>
-                                        <td>georgia.young@example.com</td>
-                                        <td>24 May, 2020</td>
-                                        <td>
-                                            <div id="paid">Paid</div>
-                                        </td>
-                                        <td>$47,800</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>558612</td>
-                                        <td>Other</td>
-                                        <td>jessica.hanson@example.com</td>
-                                        <td>24 May, 2020</td>
-                                        <td>
-                                            <div id="paid">Paid</div>
-                                        </td>
-                                        <td>$98,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>558612</td>
-                                        <td>Vendor</td>
-                                        <td>alma.lawson@example.com</td>
-                                        <td>8 Sep, 2020</td>
-                                        <td>
-                                            <div id="paid">Paid</div>
-                                        </td>
-                                        <td>$20,900</td>
-
-                                    </tr>
-                                    <tr>
-                                        <td>558612</td>
-                                        <td>Property Management Company</td>
-                                        <td>kenzi.lawson@example.com</td>
-                                        <td>22 Oct, 2020</td>
-                                        <td>
-                                            <div id="paid">Paid</div>
-                                        </td>
-                                        <td>$10,570</td>
-                                    </tr>
-                                    <tr>
-                                        <td>651535</td>
-                                        <td>Subcontractor Company</td>
-                                        <td>jackson.graham@example.com</td>
-                                        <td>1 Feb, 2020</td>
-                                        <td>
-                                            <div id="failed">failed</div>
-                                        </td>
-                                        <td>$10,200</td>
-                                    </tr>
-                                    <tr>
-                                        <td>653518</td>
-                                        <td>Mortgage Company</td>
-                                        <td>felicia.reid@example.com</td>
-                                        <td>22 Oct, 2020</td>
-
-                                        <td>
-                                            <div id="pending">pending</div>
-                                        </td>
-                                        <td>$12,600</td>
-                                    </tr>
-                                    <tr>
-                                        <td>487441</td>
-                                        <td>TPA</td>
-                                        <td>dolores.chambers@example.com</td>
-                                        <td>21 Sep, 2020</td>
-                                        <td>
-                                            <div id="paid">Paid</div>
-                                        </td>
-                                        <td>$11,170</td>
-                                    </tr>
-                                    <tr>
-                                        <td>267400</td>
-                                        <td>Fire Department</td>
-                                        <td>nevaeh.simmons@example.com</td>
-                                        <td>17, OCt 2020</td>
-
-                                        <td>
-                                            <div id="failed">failed</div>
-                                        </td>
-                                        <td>$28,000</td>
-                                    </tr>
-                                    <tr>
-                                        <td>449003</td>
-                                        <td>Insurance Carrier</td>
-                                        <td>curties.weaver@example.com</td>
-                                        <td>21 Sep, 2020</td>
-                                        <td>
-                                            <div id="paid">Paid</div>
-                                        </td>
-                                        <td>$10,000</td>
-                                    </tr>
-                                </table>
-                            </div>
-                        </div>
-
+                </div>
+                <div class="container2">
+                    <div style="float: left; margin-left: 5px;">
+                        <img id="dashpic" src="images/inbox-default.svg" alt="">
+                    </div>
+                    <div class="dashboardtext" id="minisize">
+                        Inbox
+                    </div>
+                </div>
+                <div class="container2">
+                    <div style="float: left; margin-left: 5px;">
+                        <img id="dashpic" src="images/clock-default.svg" alt="">
+                    </div>
+                    <div class="dashboardtext" id="minisize">
+                        History
+                    </div>
+                </div>
+                <div class="container2">
+                    <div style="float: left; margin-left: 5px;">
+                        <img id="dashpic" src="images/user-default.svg" alt="">
+                    </div>
+                    <div class="dashboardtext" id="minisize">
+                        Users
+                    </div>
+                </div>
+                <div class="container2">
+                    <div style="float: left; margin-left: 5px;">
+                        <img id="dashpic" src="images/maintenance-default.svg" alt="">
+                    </div>
+                    <div class="dashboardtext" id="minisize">
+                        Maintenance
+                    </div>
+                </div>
+                <div class="container2">
+                    <div style="float: left; margin-left: 5px;">
+                        <img id="dashpic" src="images/setting-default.svg" alt="">
+                    </div>
+                    <div class="dashboardtext" id="minisize">
+                        Setting
                     </div>
                 </div>
             </div>
-        </div>
+            <div class="col-10" id="content">
+                <div class="row" id="namein">
+                    Dashboard
+                </div>
+                <div class="d-flex row" style="justify-content:
+                        center;margin-bottom: 30px;">
 
-    </body>
+                    <div class="col-lg col-md-3 col-sm-4" id="productdetail">
+                        <div class="row">
+                            <div class="col-5" id="detailmap">
+                                <img src="/images/star.svg" alt="error">
+                            </div>
+                            <div class="col-7" id="padtext">
+                                <div class="row" id="numdetail">
+                                    23,456
+                                </div>
+                                <div class="row">
+                                    New Products
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-3 col-sm-4" id="productdetail">
+                        <div class="row">
+                            <div class="col-5" id="detailmap">
+                                <img src="/images/new-product.svg" alt="error">
+                            </div>
+                            <div class="col-7" id="padtext">
+                                <div class="row" id="numdetail">
+                                    2345
+                                </div>
+                                <div class="row">
+                                    Added Products
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-3 col-sm-4" id="productdetail">
+                        <div class="row">
+                            <div class="col-5" id="detailmap">
+                                <img src="/images/total-product.svg" alt="error">
+                            </div>
+                            <div class="col-7" id="padtext">
+                                <div class="row" id="numdetail">
+                                    32,456
+                                </div>
+                                <div class="row">
+                                    Total Products
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-3 col-sm-4" id="productdetail">
+                        <div class="row">
+                            <div class="col-5" id="detailmap">
+                                <img src="/images/dollar-filled.svg" alt="error">
+                            </div>
+                            <div class="col-7" id="padtext">
+                                <div class="row" id="numdetail">
+                                    5678
+                                </div>
+                                <div class="row">
+                                    Today's Sale
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                    <div class="col-lg col-md-3 col-sm-4" id="productdetail">
+                        <div class="row">
+                            <div class="col-5" id="detailmap">
+                                <img src="/images/money-bag.svg" alt="error">
+                            </div>
+                            <div class="col-7" id="padtext">
+                                <div class="row" id="numdetail">
+                                    33,5342
+                                </div>
+                                <div class="row">
+                                    Total Sale
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="background-color:
+                        white;margin-bottom: 30px;justify-content: center;">
+
+                    <div class="d-flex flex-column" id="column1">
+                        <div class="row" id="image1">
+                            <div class="col-2" id="imagetext">
+                                Sale
+                            </div>
+                            <div class="col-7">
+
+
+                            </div>
+                            <div class="col-1" id="imagetextline">
+                                Weekly
+                            </div>
+                            <div class="col-1" id="imagetextline">
+                                Monthly
+                            </div>
+                            <div class="col-1" id="imagetextline2">
+                                <u>Yearly</u>
+                            </div>
+
+                        </div>
+                        <div class="row" id="image1">
+                            <img src="/images/data-graph.png" alt="Error">
+                        </div>
+                    </div>
+                    <div class="d-flex flex-column" id="column2">
+                        <div class="row" id="imagetext">
+                            Sales by Country
+                        </div>
+                        <div class="row">
+                            <img src="/images/pie-chart.svg">
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="row" id="alignment">
+                                    <div class="col-1">
+                                        <div class="dotred">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-11">
+                                        United State of America
+                                    </div>
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-1">
+                                        <div class="dotorange">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-11">
+                                        Canada
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="row">
+                                    <div class="col-2">
+                                        <div class="dotyellow">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-10">
+                                        Russia
+                                    </div>
+                                </div>
+                                <div class="row" style="margin-top: 38px;">
+                                    <div class="col-2">
+                                        <div class="dotgreen">
+
+                                        </div>
+                                    </div>
+                                    <div class="col-10">
+                                        India
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="height: 100%;width: 100%;">
+                    <div class="col">
+                        <div class="row">
+                            <div class="col-11" id="col3text1">
+                                Invoices
+                            </div>
+                            <div class="col-1" id="col3text2">
+                                View All
+                            </div>
+                        </div>
+                        <div class="row">
+                            <table class="table table-responsive" style="width: 100%;margin-left: 20px;
+                                    margin-top: 35px;">
+                                <tr>
+                                    <th>INVOICE</th>
+                                    <th>COMPANY NAME</th>
+                                    <th>EMAIL</th>
+                                    <th> DUE DATE</th>
+                                    <th>STATUS</th>
+                                    <th>AMOUNT</th>
+                                </tr>
+                                <tr>
+                                    <td>651535</td>
+                                    <td>Public Adjustment Firm</td>
+                                    <td>georgia.young@example.com</td>
+                                    <td>24 May, 2020</td>
+                                    <td>
+                                        <div id="paid">Paid</div>
+                                    </td>
+                                    <td>$47,800</td>
+
+                                </tr>
+                                <tr>
+                                    <td>558612</td>
+                                    <td>Other</td>
+                                    <td>jessica.hanson@example.com</td>
+                                    <td>24 May, 2020</td>
+                                    <td>
+                                        <div id="paid">Paid</div>
+                                    </td>
+                                    <td>$98,000</td>
+                                </tr>
+                                <tr>
+                                    <td>558612</td>
+                                    <td>Vendor</td>
+                                    <td>alma.lawson@example.com</td>
+                                    <td>8 Sep, 2020</td>
+                                    <td>
+                                        <div id="paid">Paid</div>
+                                    </td>
+                                    <td>$20,900</td>
+
+                                </tr>
+                                <tr>
+                                    <td>558612</td>
+                                    <td>Property Management Company</td>
+                                    <td>kenzi.lawson@example.com</td>
+                                    <td>22 Oct, 2020</td>
+                                    <td>
+                                        <div id="paid">Paid</div>
+                                    </td>
+                                    <td>$10,570</td>
+                                </tr>
+                                <tr>
+                                    <td>651535</td>
+                                    <td>Subcontractor Company</td>
+                                    <td>jackson.graham@example.com</td>
+                                    <td>1 Feb, 2020</td>
+                                    <td>
+                                        <div id="failed">failed</div>
+                                    </td>
+                                    <td>$10,200</td>
+                                </tr>
+                                <tr>
+                                    <td>653518</td>
+                                    <td>Mortgage Company</td>
+                                    <td>felicia.reid@example.com</td>
+                                    <td>22 Oct, 2020</td>
+
+                                    <td>
+                                        <div id="pending">pending</div>
+                                    </td>
+                                    <td>$12,600</td>
+                                </tr>
+                                <tr>
+                                    <td>487441</td>
+                                    <td>TPA</td>
+                                    <td>dolores.chambers@example.com</td>
+                                    <td>21 Sep, 2020</td>
+                                    <td>
+                                        <div id="paid">Paid</div>
+                                    </td>
+                                    <td>$11,170</td>
+                                </tr>
+                                <tr>
+                                    <td>267400</td>
+                                    <td>Fire Department</td>
+                                    <td>nevaeh.simmons@example.com</td>
+                                    <td>17, OCt 2020</td>
+
+                                    <td>
+                                        <div id="failed">failed</div>
+                                    </td>
+                                    <td>$28,000</td>
+                                </tr>
+                                <tr>
+                                    <td>449003</td>
+                                    <td>Insurance Carrier</td>
+                                    <td>curties.weaver@example.com</td>
+                                    <td>21 Sep, 2020</td>
+                                    <td>
+                                        <div id="paid">Paid</div>
+                                    </td>
+                                    <td>$10,000</td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
 
 </html>

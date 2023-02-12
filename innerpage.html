@@ -25,22 +25,24 @@
 </head>
 
 <body>
+
+
     <nav class="navbar navbar-expand-lg mb-4 navbar-light
     bg-light">
         <div class="container-fluid navcontainer p-0 justify-content-start">
-            <button class="btn me-2" onclick="widthChange()" data-bs-toggle="collapse" data-bs-target="#dashboard"><img
+            <button class="btn me-2 bg-light" onclick="widthChange()" data-bs-toggle="collapse" data-bs-target="#dashboard"><img
                     src="images/menu-bar.svg"></button>
-            <a href="#" class="navbar-brand me-5"><img src="images/header-logo.svg">
+            <a href="#" class="navbar-brand me-5" id="changeimage"><img src="images/header-logo.svg">
             </a>
             <div class="d-flex justify-content-around">
                 <img class="mt-1 me-2" src="images/search-icon.svg" style="height: 19px;" alt="search">
                 <input class="form-control me-2 p-0 border-0" type="search" placeholder="Search" aria-label="Search">
             </div>
         </div>
-        <div class="container-fluid gayab p-0 justify-content-end">
+        <div class="container-fluid gayab p-0 justify-content-md-end justify-content-sm-around ">
             <img class="me-5" src="images/notification-icon.svg" alt="notification">
             <img class="me-3" src="images/profile.png" alt="dp">
-            <div class="me-3">
+            <div class="me-3" id="minisize" >
                 John doe
                 <img src="images/downward-arrow.svg" alt="dropdown">
             </div>
